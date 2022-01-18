@@ -8,7 +8,7 @@ public class Account {
 
     public boolean checkNameToEmboss() {
         if (name != null){
-            return name.matches(("^.{3,19}$")) && name.matches("^[\\S]+\\s[\\S]+$");
+            return name.matches("(?=^[\\S]+\\s[\\S]+$)(^.{3,19}$)");
         } else {return false;}
     }
 }
